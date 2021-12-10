@@ -1,6 +1,6 @@
 ---
 - hosts: all
- becomes: yes
+ become: yes
  gather_facts: yes
  tasks:
   - name: i want to install webserver
