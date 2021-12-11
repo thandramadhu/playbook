@@ -1,9 +1,0 @@
----
--hosts: all
- become: yes
- tasks:
- -name: i want to install server on RedHat node
-    yam:
-  name: httpt
-  state: present
- when: ansible_os_family=="RedHat" 
