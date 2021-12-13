@@ -7,11 +7,11 @@
       name: "{{mywebpackageonubuntu}}"
       state: present
     when: ansible_os_family =="Debian"
-  - name: i went to start webserver on ubuntu16 nodes 
+  - name: i want to start webserver on ubuntu16 nodes 
     service: 
        name: "{{mywebpackageonubuntu}}"
        state: started 
-    when: ansible_os_family =="Debine"
+    when: ansible_os_family =="Debian"
 
   - name: i want to install web server on RedHat node
     yum:
@@ -22,4 +22,4 @@
     service: 
       name: "{{mywebpackagonredhat}}"  
       state: started
-    when: ansible-os_family =="RedHat"
+    when: ansible_os_family =="RedHat"
