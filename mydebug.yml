@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 172.31.47.158
   becomr: yes
   taskes: 
   - name: i want to execute linux command directly
