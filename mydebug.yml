@@ -1,0 +1,19 @@
+---
+- hosts: 172.31.47.158
+  becomr: yes
+  taskes: 
+  - name: i want to execute linux command directly
+    command: hostname  -f
+    register: myresult
+
+  - name: i want to debug
+    debug:
+      msg: "{{myresult}}"
+
+  - name: install git
+    apt: 
+      name: tree
+      state: present 
+    when: myresult.stderr !=""      
+
+  
