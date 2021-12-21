@@ -43,7 +43,7 @@
   file:
     path: /opt/tomcat/temp/
     state: directory
-    recurrse: yes
+    recurse: yes
     owner: tomcat
 
 
