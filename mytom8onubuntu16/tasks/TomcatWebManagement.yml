@@ -11,5 +11,7 @@
 
 - name: copy tomcat host manager context file into nodes
   template: 
-      src: templates/mytomcathostmanagercontext.j
+      src: templates/mytomcathostmanagercontext.j2
+      dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+      
       
