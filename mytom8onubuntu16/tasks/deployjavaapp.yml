@@ -1,0 +1,12 @@
+---
+-  name: i want to deploy java application
+   get_url:
+     url:
+     dest: /opt/tomcat/
+     force_basic auth: yes
+
+- name: i want to deploy jenkins as java application
+  get_url: 
+    url:
+    dest:
+    force_basic_auth: yes
