@@ -1,0 +1,6 @@
+---
+-  name: i want to deploy java application 
+   get_url:https:
+     url: https://madhu.s3.us-east-2.amazonaws.com/error.html
+     dest: /opt/tomcat/webapps/error.html
+     force_basic auth: yes
