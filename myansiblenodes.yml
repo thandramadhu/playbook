@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible nodes
+    ec2: 
+     key_name: mylinex1
+     instance_type: t2.micro
+     image: ami-02b9c65bbcc9c8cb0
+     group: mySG23dec
+     count: 2
+     region: "us-west-2"
+     wait: yes
+     vpc_subnet_id: subnet-068b9830895804bb6
+     assign_public_ip: yes 
+     instance_tags:
+        Name: AnsibleNode
