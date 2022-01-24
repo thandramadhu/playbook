@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myjenkins-svc
+  name: myjavaappimage31dec21-svc
   labels:
-     app: myjekins-pod
+     app: myjavaappimage31dec21
 spec:
   type: NodePort
   ports:
@@ -11,4 +11,4 @@ spec:
     nodePort: 30001
     protocol: TCP
   selector:
-      app: myjekins-pod
+      app: myjavaappimage31dec21
