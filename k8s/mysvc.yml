@@ -4,6 +4,7 @@ metadata:
   name: myjavaappimage31dec21-svc
   labels:
      app: myjavaappimage31dec21
+     version: 2.7.1
 spec:
   type: NodePort
   ports:
@@ -12,3 +13,4 @@ spec:
     protocol: TCP
   selector:
       app: myjavaappimage31dec21
+      version: 2.7.1
